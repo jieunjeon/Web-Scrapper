@@ -15,6 +15,23 @@ func lenAndUpper(name string) (length int, uppercase string) {
 func repeatMe(words ...string) {
 	fmt.Println(words)
 }
+
+func superAdd_loop(numbers ...int) int {
+	for index, number := range numbers {
+		fmt.Println(index, number)
+		/*
+			0 4
+			1 4
+			2 3
+			3 5
+		*/
+	}
+	for i := 0; i < len(numbers); i++ {
+		fmt.Println(numbers[i])
+	}
+	return 1
+}
+
 func main() {
 
 	/** variables and constants **/
