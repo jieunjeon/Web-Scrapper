@@ -15,8 +15,8 @@ This is a web scrapper to grab jobs based on the "programming language" keyword 
 - [x] Add simple css for the landing page
 
 ### Screenshots
-![Main page](https://github.com/jieunjeon/Web-Scrapper/blob/master/sample1.jpg?raw=true)
-![Search keyword](https://github.com/jieunjeon/Web-Scrapper/blob/master/sample1.jpg?raw=true)
-![Terminal Logs](https://github.com/jieunjeon/Web-Scrapper/blob/master/sample1.jpg?raw=true)
-![CSV file downloads](https://github.com/jieunjeon/Web-Scrapper/blob/master/sample1.jpg?raw=true)
-![Sample output CSV file](https://github.com/jieunjeon/Web-Scrapper/blob/master/sample1.jpg?raw=true)
+![Main page](https://github.com/jieunjeon/Web-Scrapper/blob/master/sample1.png)
+![Search keyword](https://github.com/jieunjeon/Web-Scrapper/blob/master/sample1.png)
+![Terminal Logs](https://github.com/jieunjeon/Web-Scrapper/blob/master/sample1.png)
+![CSV file downloads](https://github.com/jieunjeon/Web-Scrapper/blob/master/sample1.png)
+![Sample output CSV file](https://github.com/jieunjeon/Web-Scrapper/blob/master/sample1.png)
