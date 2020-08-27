@@ -1,8 +1,11 @@
+package main
+
 import (
+	"os"
 	"strings"
 
-	"github.com/labstack/echo"
 	"github.com/jieunjeon/Web-Scrapper-With-GoLang_Echo/scrapper"
+	"github.com/labstack/echo"
 )
 
 const fileName string = "jobs.csv"
@@ -12,8 +15,10 @@ func handleHome(c echo.Context) error {
 }
 
 func handleScrape(c echo.Context) error {
+	defer os.Remove("jobs.csv")
 	term := strings.ToLower(scrapper.CleanString(c.FormValue("term")))
-	return nil
+	scrapper.Scrape(term)
+	return c.Attachment("jobs.csv", "jobs.csv")
 }
 
 func main() {
@@ -21,4 +26,4 @@ func main() {
 	e.GET("/", handleHome)
 	e.POST("/scrape", handleScrape)
 	e.Logger.Fatal(e.Start(":1323"))
-}	
+}

@@ -81,6 +81,7 @@ func extractJob(card *goquery.Selection, c chan<- extractedJob) {
 		summary:  summary}
 }
 
+// CleanString for empty spaces
 func CleanString(str string) string {
 	return strings.Join(strings.Fields(strings.TrimSpace(str)), " ")
 }
