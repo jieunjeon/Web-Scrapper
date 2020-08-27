@@ -1,9 +1,24 @@
-package main
+import (
+	"strings"
 
-import "github.com/jieunjeon/Web-Scrapper-With-GoLang_Echo/scrapper"
+	"github.com/labstack/echo"
+	"github.com/jieunjeon/Web-Scrapper-With-GoLang_Echo/scrapper"
+)
 
-func main() {
-	scrapper.Scrape("term")
+const fileName string = "jobs.csv"
+
+func handleHome(c echo.Context) error {
+	return c.File("home.html")
 }
 
-// import "github.com/jieunjeon/Web-Scrapper-With-GoLang_Echo/scrapper"
+func handleScrape(c echo.Context) error {
+	term := strings.ToLower(scrapper.CleanString(c.FormValue("term")))
+	return nil
+}
+
+func main() {
+	e := echo.New()
+	e.GET("/", handleHome)
+	e.POST("/scrape", handleScrape)
+	e.Logger.Fatal(e.Start(":1323"))
+}	
