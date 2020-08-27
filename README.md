@@ -28,4 +28,4 @@ CSV file downloads
 ![CSV file downloads](https://github.com/jieunjeon/Web-Scrapper/blob/master/sample4.png)
 
 Sample output CSV file
-![Sample output CSV file](https://github.com/jieunjeon/Web-Scrapper/blob/master/sample6.png)
+![Sample output CSV file](https://github.com/jieunjeon/Web-Scrapper/blob/master/sample5.png)
